@@ -2,9 +2,26 @@ import React, { Component, Fragment  } from 'react'
 import {
   Link
 } from 'react-router-dom'
-import { Icon } from 'antd'
+import { Icon, Menu, Dropdown } from 'antd'
 import './Head.scss'
 import Logo from '@img/logo.png'
+
+const classification = (
+  <Menu>
+    <Menu.Item>
+      <Link>Vue</Link>
+    </Menu.Item>
+    <Menu.Item>
+      <Link>React</Link>
+    </Menu.Item>
+    <Menu.Item>
+      <Link>Javascript</Link>
+    </Menu.Item>
+    <Menu.Item>
+      <Link to="/test/redux">测试redux</Link>
+    </Menu.Item>
+  </Menu>
+)
 
 class Head extends Component {
   state= {
@@ -63,6 +80,13 @@ class Head extends Component {
                   )
                 })
               }
+              <li className="link">
+              <Dropdown overlay={classification}>
+                <a className="ant-dropdown-link" href="#">
+                  分类 <Icon type="down" />
+                </a>
+              </Dropdown>
+              </li>
             </ul>
           </div>
         </header>
