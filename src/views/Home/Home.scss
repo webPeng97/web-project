@@ -1,0 +1,12 @@
+#home {
+  display: flex;
+  justify-content: space-between;
+
+  .home-left-wrap {
+    width: 70%;
+  }
+
+  .home-right-wrap {
+    width: 27%;
+  }
+}

@@ -1,0 +1,28 @@
+.details {
+  @extend %default-pin-bg;
+  padding: 20px;
+
+  &-title {
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+  }
+
+  &-info-wrap {
+    // border: 1px solid red;
+    text-align: center;
+    line-height: 30px;
+    color: $info-font;
+
+    >div {
+      display: inline-block;
+      margin: 0 10px;
+    }
+  }
+
+  &-content {
+    font-size: 16px;
+    line-height: 30px; 
+    padding: 20px 0;
+  }
+}

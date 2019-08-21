@@ -1,0 +1,46 @@
+#layout {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+  font-size: 16px;
+  background-color: #fff;
+  box-shadow: 0 1px 6px $purple-shallow;
+  z-index: 9999999;
+}
+
+.nav-container {
+  display: flex;
+  height: 100%;
+
+  .logo {
+    padding: 0 5px;
+    width: 150px;
+    >img {
+      vertical-align: middle;
+    }
+  }
+}
+
+.nav-link {
+  display: flex;
+
+  .link {
+    margin: 0 20px;
+
+    &-block {
+      color: $font;
+
+      &:hover {
+        color: $purple;
+      }
+    }
+  }
+  .link-active {
+    .link-block {
+      color: $purple;
+    }
+  }
+}

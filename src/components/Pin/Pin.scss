@@ -1,0 +1,60 @@
+.pin-wraper {
+  width: 100%;
+}
+.pin {
+  width: 100%;
+  height: 220px;
+  padding: 10px 15px;
+  font-size: 16px;
+  margin-bottom: 25px;
+  cursor: pointer;
+  @extend %default-pin-bg;
+
+  .link-block:hover {
+    color: $font;
+  }
+
+  &-title {
+    margin-bottom: 10px;
+    @extend %ellipsis;
+  }
+
+  &-content {
+    display: flex;
+    padding: 10px 0;
+  }
+
+  &-warp {
+    flex: 1;
+    padding: 0 15px;
+
+    &-brief{
+      @include ellipsisMultiline(3);
+      line-height: 30px;
+      padding-top: 5px;
+    }
+
+    &-info {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 15px;
+
+      >div {
+        border: 1px solid #e5e5e5;
+        padding: 5px 15px;
+        border-radius: 20px;
+        font-size: 14px;        
+      }
+    }
+  }
+
+  &-img {
+    width: 230px;
+    height: 150px;
+    overflow: hidden;
+
+    >img {
+      height: 100%;
+    }
+  }
+}
