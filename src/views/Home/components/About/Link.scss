@@ -6,6 +6,7 @@
 .about-link {
   width: 100%;
   height: 300px;
+  margin-bottom: 20px;
   @extend %default-pin-bg;
 
   &-name {
@@ -24,6 +25,10 @@
       color: #fff;
       font-family: font;
     }
+  }
+  .xiaozhan {
+    background: url(../../../../assets/images/xz.png) no-repeat;
+    background-size: 100% 100%;
   }
 
   &-title {
