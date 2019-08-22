@@ -3,6 +3,7 @@ import Pin from '@components/Pin/Pin'
 import LayoutAboutLink from './components/About/Link'
 import PinImg from '@img/pin.png'
 import './Home.scss'
+import { Pagination } from 'antd'
 
 import {
   Route
@@ -139,12 +140,20 @@ class Home extends Component {
           <Route exact path={this.props.match.url} render={() => (
             <Pin pinList={this.state.pinList}/>
           )}/>
+          <Pagination
+            total={200}
+            showTotal={total => `总数：${total}`}
+            onChange={this.onChange} />
         </div>
         <div className="home-right-wrap">
           <LayoutAboutLink/>
         </div>
       </div>
     )
+  }
+
+  onChange (e) {
+    console.log('当前页：', e)
   }
 }
 export default Home

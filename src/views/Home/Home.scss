@@ -1,9 +1,16 @@
 #home {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 50px;
 
   .home-left-wrap {
     width: 70%;
+
+    .ant-pagination {
+      text-align: center;
+      // background-color: #fff;
+      // padding: 20px 0;
+    }
   }
 
   .home-right-wrap {

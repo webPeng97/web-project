@@ -19,11 +19,12 @@ const style = {
   bottom:'0',
   width:'100%',
   height:'100%',
-  background:'rgba(255, 255, 255,.5)',
+  background:'rgba(255, 255, 255,.7)',
   display:'flex',
   justifyContent:'center',
   alignItems:'center',
-  color:'#fff'
+  color:'#fff',
+  zIndex: '9999999'
 }
 export default connect(
   (state)=>{

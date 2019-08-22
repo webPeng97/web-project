@@ -9,13 +9,13 @@ import Logo from '@img/logo.png'
 const classification = (
   <Menu>
     <Menu.Item>
-      <Link>Vue</Link>
+      <Link to="/">Vue</Link>
     </Menu.Item>
     <Menu.Item>
-      <Link>React</Link>
+      <Link to="/">React</Link>
     </Menu.Item>
     <Menu.Item>
-      <Link>Javascript</Link>
+      <Link to="/">Javascript</Link>
     </Menu.Item>
     <Menu.Item>
       <Link to="/test/redux">测试redux</Link>
@@ -82,9 +82,9 @@ class Head extends Component {
               }
               <li className="link">
               <Dropdown overlay={classification}>
-                <a className="ant-dropdown-link" href="#">
+                <div className="ant-dropdown-link">
                   分类 <Icon type="down" />
-                </a>
+                </div>
               </Dropdown>
               </li>
             </ul>

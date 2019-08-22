@@ -9,6 +9,7 @@ import {
 // 页面
 import LayoutHead from '@components/Layout/Head/Head'
 import Loading from '@components/Loading'
+import Footer from '@components/Layout/Footer/Footer'
 
 // 使用redux
 import { Provider } from 'react-redux'
@@ -27,8 +28,8 @@ const App = () => (
   <Router>
     <Fragment>
       <Provider store = {store}>
-        <LayoutHead/>
-        <Loading/>
+        <LayoutHead />
+        <Loading />
         <div className="main-container">
           <Switch>
             <Route path='/' exact render={()=> (
@@ -42,6 +43,7 @@ const App = () => (
             <Route component={NoMatch}/>
           </Switch>
         </div>
+        <Footer />
       </Provider>
     </Fragment>
   </Router>
