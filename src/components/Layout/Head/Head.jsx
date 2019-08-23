@@ -35,11 +35,6 @@ class Head extends Component {
         icon: 'bank'
       },
       {
-        name: '404',
-        path: '/404',
-        icon: 'smile'
-      },
-      {
         name: '测试redux',
         path: '/test/redux',
         icon: 'bell'

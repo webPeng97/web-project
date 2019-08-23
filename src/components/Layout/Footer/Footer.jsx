@@ -11,7 +11,7 @@ class Footer extends Component {
   render () {
     return (
       <footer>
-        页脚
+        页脚信息
       </footer>
     )
   }
